@@ -104,10 +104,10 @@ button:hover {
 }
 
 .form-container {
-    background-color: #d2b48c; /* Light brown color */
+    /* background-color: #d2b48c; Light brown color */
     /* padding: 20px; */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     width: 100%; /* Width set to 50% */
     max-width: 500px;
     text-align: center;
@@ -130,7 +130,7 @@ label {
 input, textarea {
     width: 100%;
     /* padding: 6px; */
-    margin-bottom: 10px;
+    /* margin-bottom: 8px; */
     border: 1px solid #8b5a2b; /* Darker border */
     border-radius: 4px;
     background-color: #fff3e6; /* Light background for inputs */
@@ -141,13 +141,13 @@ input, textarea {
     /* margin-bottom: 20px; */
     display: flex;
     justify-content: space-around;
-    color: #5a4037; /* Darker brown */
+    /* color: #5a4037; Darker brown */
 }
 
 button {
     width: 25%;
     padding: 12px 25px;
-    background-color: #8b5a2b; /* Button with darker brown */
+    background-color: #8b5a2b; 
     color: white;
     border: none;
     border-radius: 4px;
@@ -188,10 +188,10 @@ button:hover {
     100% { transform: rotate(360deg); }
 }
 .weather-info {
-    background-color: #fff7ec;
+    /* background-color: #fff7ec; */
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 12px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     width: 50%;
     color: #5c4433;
     min-height: 60vh; /* Take up more vertical space */
