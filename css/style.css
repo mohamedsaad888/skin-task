@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(216, 207, 194);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.home{
+background-image:url(/Images/fleur-kaan-w4Dj3MshHQ0-unsplash.jpg);
+background-size: cover;
+background-position: right center;
+}
+.navbar{
+    background-color: 
+    transparent;
+    z-index: 9999;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+header{
+    height: 100vh;
+}
+.bestseller .caption{
+    color:rgb(236, 228, 213);
+    height: 100vh; 
+    width: 100%;
+}
+.bestseller{
+    background-color: rgb(236, 228, 213);
+}
+.bestseller .card{
+cursor:pointer;
+transition:  0.3s ease, transform 0.2s ease;
+}
+.bestseller .card:hover{
+    transform: scale(1.08);
+    z-index: 5555;
+}
+.review {
+    background-color: rgb(118, 122, 87);
+    color:rgb(236, 228, 213);
+}
+.skin-plans{
+    background-color: rgb(236, 228, 213);
+
+}
+.skin-plans a{
+    color: rgb(0, 0, 0);
+}
+.skin-plans button{
+    background-color: rgb(103, 102, 101);
+    transition:  0.3s ease, transform 0.2s ease;
+
+}
+.skin-plans button:hover{
+    background-color: rgba(103, 99, 95.0.9);
+    transform: scale(1.08);
+
+
+}
+.checkbox-label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #007BFF;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.custom-checkbox input:checked ~ .checkbox-label {
+    background-color: #007BFF;
+    color: #ffffff;
+    border-color: #0056b3;
+}

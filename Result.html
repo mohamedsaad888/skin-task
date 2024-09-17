@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Results</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Result.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Loading screen -->
+    <div id="loading-screen">
+        <p id="sentence1">Preparing your personalized skin care plan...</p>
+        <p id="sentence2">Analyzing your skin type and concerns...</p>
+        <p id="sentence3">Finding the best products for your skin health...</p>
+        <p id="sentence4">Gathering essential skin care tips and recommendations...</p>
+        <p id="sentence5">Your skin care results are almost ready!</p>
+    </div>
+
+    <!-- Main content -->
+    <div id="main-content" class="container">
+        <h1>Skin Care Recommendations</h1>
+        
+        <p id="results-text"></p>
+
+        <!-- Chart Section -->
+        <h2>Skin Improvement Over Time</h2>
+        <canvas id="skinChart" width="400" height="200"></canvas>
+
+        <!-- Vitamins Section -->
+        <h2>Vitamins That Improve Skin Health</h2>
+        <ul id="vitamin-list">
+            <li><strong>Vitamin A:</strong> Helps reduce acne and supports the skin’s immune system.</li>
+            <li><strong>Vitamin C:</strong> Promotes collagen production, improves skin texture, and reduces wrinkles.</li>
+            <li><strong>Vitamin E:</strong> Protects the skin from oxidative stress and acts as a natural anti-inflammatory.</li>
+            <li><strong>Vitamin D:</strong> Plays a critical role in skin cell growth and repair.</li>
+            <li><strong>Omega-3 Fatty Acids:</strong> Keeps the skin hydrated and reduces inflammation.</li>
+            <li><strong>Vitamin B3 (Niacinamide):</strong> Reduces redness and blotchiness and improves skin elasticity.</li>
+        </ul>
+
+        <!-- Product Recommendation Section -->
+        <h2>Recommended Product for Skin Health</h2>
+        <div class="product">
+            <img src="Images/product-2.jpg" alt="Product Image" class="product-img">
+            <div class="product-info">
+                <h3>Hydrating Skin Serum</h3>
+                <p>This serum contains a combination of hyaluronic acid, niacinamide, and Vitamin C to hydrate, brighten, and improve overall skin texture.</p>
+                <button class="product-btn p-2">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Customer Satisfaction Section -->
+<h2>What Our Customers Are Saying</h2>
+<div class="customer-satisfaction-section">
+
+    <!-- Satisfaction Summary -->
+    <div class="satisfaction-summary">
+        <h3>Overall Satisfaction: <span class="rating-value">4.9/5</span></h3>
+        <div class="stars">
+            ★★★★★
+        </div>
+        <p>Based on 500+ Reviews</p>
+        <!-- Progress Bar for Customer Satisfaction -->
+        <div class="progress-bar">
+            <div class="filled-bar" style="width: 98%;"></div>
+        </div>
+        <p>98% of our customers report visible improvements in their skin!</p>
+    </div>
+
+    <!-- Interactive Testimonial Slider -->
+    <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+            <p><strong>Jane Doe:</strong> "After following the personalized routine, my skin is glowing! My acne has reduced significantly."</p>
+        </div>
+        <div class="testimonial-slide">
+            <p><strong>John Smith:</strong> "I've seen a massive improvement in my skin tone. The product suggestions are spot on!"</p>
+        </div>
+        <div class="testimonial-slide">
+            <p><strong>Emma White:</strong> "The AI recommendations were so accurate! My sensitive skin feels smoother and more hydrated."</p>
+        </div>
+    </div>
+
+    <!-- Slider Navigation Buttons -->
+    <div class="slider-nav">
+        <button class="prev-slide">◀</button>
+        <button class="next-slide">▶</button>
+    </div>
+
+    <!-- Real-time Rating Submission -->
+    <div class="rating-submission">
+        <h3>Rate Your Experience</h3>
+        <div class="rating-stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <p id="rating-feedback"></p>
+        <button id="submit-rating">Submit Rating</button>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+<footer class="footer container">
+    <div class="footer-container row ">
+        <div class="footer-column col-md-3 col-sm-6 mb-4">
+            <h3>About Us</h3>
+            <p>We are dedicated to providing personalized skin care advice using cutting-edge AI technology. Our goal is to help you achieve your best skin yet!</p>
+        </div>
+
+        <div class="footer-column col-md-3 col-sm-6 mb-4">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column col-md-3 col-sm-6 mb-4">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-column col-md-3 col-sm-6 mb-4">
+            <h3>Contact Info</h3>
+            <p>Email: support@skincareai.com</p>
+            <p>Phone: +1 (800) 123-4567</p>
+        </div>
+    </div>
+    <div class="footer-bottom ">
+        <p>&copy; 2024 Skin Care AI. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="js/Result.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

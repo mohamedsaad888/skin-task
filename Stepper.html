@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care question</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Stepper.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="stepper">
+            <div class="steps">
+                <!-- Step indicators -->
+                <div class="step" id="step-1">1</div>
+                <div class="step" id="step-2">2</div>
+                <div class="step" id="step-3">3</div>
+                <div class="step" id="step-4">4</div>
+                <div class="step" id="step-5">5</div>
+                <div class="step" id="step-6">6</div>
+                <div class="step" id="step-7">7</div>
+                <div class="step" id="step-8">8</div>
+
+            </div>
+            <div class="content">
+                <!-- Questions -->
+                <div class="question text-center" id="question-1">
+                    <div class="question-container  " >
+                        <h2>Skin Type</h2>
+                        <div class="options  ">
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Dry</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Oily</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Normal</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Moisturizer</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Combination</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Other</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="question" id="question-2" style="display: none;">
+                    <div class="question-container  " >
+                        <h2>How can we help? </h2>
+                        <div class="options  ">
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">pigmentation and acne etc</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Bridal preparation</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Skin care during pregnancy</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Skin care during menopause / hormonal changes</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">I want general healthy skin</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="question" id="question-3" style="display: none;">
+                    <div class="question-container  " >
+                        <h2>Do you have concerns about your eye area?</h2>
+                        <div class="options  ">
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Fine Lines</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Puffiness</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Darkness</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Wrinkles</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Dehydration</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">None</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="question" id="question-4" style="display: none;">
+                    <div class="question-container  " >
+                        <h2>Which skincare steps do you follow?</h2>
+                        <div class="options  ">
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Cleanser</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Toner</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Serum</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Moisturizer</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Sunscreen</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Face Mask</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="question" id="question-5" style="display: none;">
+                    <div class="question-container  " >
+                        <h2>I drink... A cup daily</h2>
+                        <div class="options  ">
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)"> 1-3 </button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">4-5</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">6-7</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">7-8</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">8-9</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">9-10</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">10 Or more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="question" id="question-6" style="display: none;">
+                    <div class="question-container  " >
+                        <h2>Wrinkles on my skin</h2>
+                        <div class="options  ">
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Doesn't exist yet</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Few </button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Spread and deep</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Few and superficial</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">Spread and superficial</button>
+                            <button class="option w-50 m-1" onclick="toggleSelection(this)">superficial and deep</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="question -question-7" id="question-2" style="display: none;">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="loading">
+                            <div class="loader mx-auto"></div>
+                            <p>Fetching weather data...</p>
+                        </div>
+                        <div class="weather-info col-sm-12">
+                            <h1>Here is the weather information in your area that has a negative impact on your skin</h1>
+                            <div class="weather-detail">
+                                <div>
+                                    <p id="temperature">--</p>
+                                    <small>Temperature (°C)</small>
+                                </div>
+                                <div>
+                                    <p id="weather">--</p>
+                                    <small>Condition</small>
+                                </div>
+                            </div>
+                            <div class="weather-detail">
+                                <div>
+                                    <p id="wind">--</p>
+                                    <small>Wind Speed (km/h)</small>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                <div class="question" id="question-8" style="display: none;">
+                    <div class="form-container">
+                        <h2>We Need Some basic information</h2>
+                        <form id="simpleForm">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" required>
+                
+                            <!-- New Gender Selection -->
+                            <label>Gender:</label>
+                            <div class="gender-container">
+                                <label>
+                                    <input type="radio" name="gender" value="Female" required> Female
+                                </label>
+                                <label>
+                                    <input type="radio" name="gender" value="Male" required> Male
+                                </label>
+                            </div>
+                
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                
+                            <button class="" type="submit">Submit</button>
+                        </form>
+                
+                        <div id="formOutput"></div>
+                    </div>
+                </div>
+                
+                <!-- Add more questions here -->
+            </div>
+            <div class="controls">
+                <button id="prevBtn" onclick="changeStep(-1)">Previous</button>
+                <button id="nextBtn" onclick="changeStep(1)">Next</button>
+            </div>
+        </div>
+    </div>
+  
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Stepper.js"></script>
+</body>
+</html>
